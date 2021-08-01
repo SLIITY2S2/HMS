@@ -1,0 +1,24 @@
+@charset "ISO-8859-1";
+
+
+.row {
+  display: flex;
+}
+
+
+.column1 {
+  
+  padding:0;
+  margin:5px 20px 10px;
+  width : 150px ;
+ 
+}
+
+
+.column2{
+	padding:0 ;
+	margin: 5px 20px 5px 50px ;
+	width: 500px ;
+	color: #11165e ;
+}
+
