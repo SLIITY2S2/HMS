@@ -30,31 +30,30 @@
 		 		</div>
 	 	</div>
 	 </div>	
-	 
-	 <div class="list3"> 
-		 
+	 		 
 		 	<div class="row1">	 
 		 		<h2>Follow us on Social Media </h2>
-			 <div class="column">	
-			
-				<a href="https://www.facebook.com/MatalePrivateHospital" target="_blank"> <img src="images/facebook.png" id="footerimg"></a> 
-			
-			</div>
-			<div class="column">
-			
-				 <a href="https://www.instagram.com/MatalePrivateHospital" target="_blank"> <img src="images/instergram.png" id="footerimg"></a> 
+		 
+				 <div class="column">	
 				
-			
-			</div>
-			<div class="column">
-			
-				<a href="https://lk.linkedin.com/MatalePrivateHospital" target="_blank"> <img src="images/link.png" id="footerimg"></a> 
-			
-			</div>
+					<a href="https://www.facebook.com/MatalePrivateHospital" target="_blank"> <img src="images/facebook.png" alt="facebook" id="footerimg"></a> 
+				
+				</div>
+				<div class="column">
+				
+					 <a href="https://www.instagram.com/MatalePrivateHospital" target="_blank"> <img src="images/instergram.png" alt="instagram" id="footerimg"></a> 
+					
+				
+				</div>
+				<div class="column">
+				
+					<a href="https://lk.linkedin.com/MatalePrivateHospital" target="_blank"> <img src="images/link.png" alt="linkedin" id="footerimg"></a> 
+				
+				</div>
 		</div>
 		 
 	</div>
-	</div>
+	
 	</footer>
 	 
 </body>
