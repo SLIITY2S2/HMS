@@ -34,7 +34,7 @@
 	  <h1><b>Patient Register Form:</b></h1><br><br>
 	  <div class="card">
 	   <div class="card-body">
-	    <form action="<%=request.getContextPath()%>/register" method="post">
+	    <form action="<%=request.getContextPath()%>/#" method="post">
 	
 	     <div class="form-group row">
 	      <label for="name" class="col-sm-2 col-form-label"><b>Name</b></label>
@@ -46,7 +46,8 @@
 	     <div class="form-group row">
 	      <label for="address" class="col-sm-2 col-form-label"><b>Address</b></label>
 	      <div class="col-sm-7">
-	       <textarea class="form-control" name="address" rows="10"  cols="50" placeholder="Enter Address" required="required"></textarea>
+
+	       <textarea class="form-control" name="address" rows="4"  cols="50" placeholder="Enter Address" required="required"></textarea>
 	      </div>
 	     </div>
 	     
@@ -64,18 +65,20 @@
 	      </div>
 	     </div>
 	     
-	      <div class="form-group row">
-	      <label for="dob" class="col-sm-2 col-form-label"><b>Date of Birth</b></label>
-	      <div class="col-sm-7">
-	       <input type="date" class="form-control" name="dob" placeholder="Enter Date of Birth" required="required">
-	      </div>
-	     </div>
+	     
 	     
 	      <div class="form-group row">
 	      <label for="gender" class="col-sm-2 col-form-label"><b>Gender</b></label>
 	      <div class="col-sm-2">
 	       <input type="radio" class="form-control" name="gender" checked><b>Male</b>
 	       <input type="radio" class="form-control" name="gender"><b>Female</b>
+	      </div>
+	     </div>
+	     
+	     <div class="form-group row">
+	      <label for="recepId" class="col-sm-2 col-form-label"><b>ReceptionistID</b></label>
+	      <div class="col-sm-7">
+	       <input type="date" class="form-control" name="recepId" placeholder="Receptionist Id" required="required">
 	      </div>
 	     </div>
 	     
@@ -86,26 +89,22 @@
 	      </div>
 	     </div>
 	     
-	     
-	     <div class=" form-group row">
-	      <label for="userName" class="col-sm-2 col-form-label"><b>User Name</b></label>
+	      <div class="form-group row">
+	      <label for="dob" class="col-sm-2 col-form-label"><b>Date of Birth</b></label>
 	      <div class="col-sm-7">
-	       <input type="text" class="form-control" name="username" placeholder="Enter username" required="required">
+	       <input type="date" class="form-control" name="dob" placeholder="Enter Date of Birth" required="required">
 	      </div>
 	     </div>
 	     
 	     
 	     <div class="form-group row">
-	      <label for="password" class="col-sm-2 col-form-label"><b>Password</b></label>
+	      <label for="ptype" class="col-sm-2 col-form-label"><b>Patient Type</b></label>
 	      <div class="col-sm-7">
-	       <input type="password" class="form-control" name="password" placeholder="Enter Password" required="required">
-	      </div>
-	     </div>
-	     
-	     <div class="form-group row">
-	      <label for="hobby" class="col-sm-2 col-form-label"><b>What is your hobby?</b></label>
-	      <div class="col-sm-7">
-	       <input type="text" class="form-control" name="hobby" placeholder="Enter hobby" required="required">
+	       <select name="ptype">
+	       		<option value="Consulting">Consulting</option>
+	       		<option value="OPD">OPD</option>
+	       		<option value="Inpatient">Inpatient</option>
+	       </select>
 	      </div>
 	     </div>
 	     
@@ -114,6 +113,6 @@
 	   </div>
 	  </div>
 	 </div>
-	 <br><br><br> 
-
+	 <br><br><br>
+	 
     <jsp:include page="Footer.jsp" />

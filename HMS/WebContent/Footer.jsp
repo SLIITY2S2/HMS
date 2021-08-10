@@ -1,12 +1,10 @@
-
-<br><br>
-
-	 <br><br>
 	 </div>
 
-	 <footer class="page-footer font-small blue pt-4"> 
-	 <div class="container-fluid text-center text-md-left">
+
+	 <footer> 
+	
 	 <div style="background-color:#0f088c; width: 100%; height: 425px;">
+
 	 
 	 	<div class="row">	 		
 	 		<div class="column3">
@@ -62,11 +60,21 @@
 		</div>
 		
 	</div>
+
 	
-		<div class="footer-copyright">� 2020 Copyright:
+		<div class="footer-copyright">© 2020 Copyright:
     		<a href="https://Mataleprivatehospitals5@gmail.com/"> Mataleprivatehospitals.com</a>
  		 </div>
+
+
 	</div>
+
+	
+		<div class="footer-copyright">© 2020 Copyright:
+    		<a href="https://Mataleprivatehospitals5@gmail.com/"> Mataleprivatehospitals.com</a>
+ 		 </div>
+	
+
 </footer>
 
 </body>
