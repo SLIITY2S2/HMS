@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+
+.main_image{
+	 width: 80% ; 
+	 height: 500px
+}
+
+.image{
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+}
