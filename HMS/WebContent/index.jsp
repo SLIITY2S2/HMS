@@ -24,9 +24,13 @@
 				<h1><b>Matale Private Hospital Ltd</b></h1>
 				<h3><i>Inspiring better health for you and your loving ones...</i></h3>
 			</div>
-		
+			<div class="menu">
+				<a href="Login.jsp"><img alt="login" src="./images/login1.jpg" class="btnimage"></a>
+				<a href="OnlinePatientRegistration.jsp"><img alt="login" src="./images/register.jpg" class="btnimage"></a>
+			</div>
 	 	</div>
 	 </div>
+	 
 	 
 	 <div class="background">
 

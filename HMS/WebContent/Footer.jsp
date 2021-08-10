@@ -1,13 +1,10 @@
 	 </div>
-<<<<<<< Updated upstream
 
-	 <footer> 
-	 <div style="background-color:#0f088c; width: 100%; height: 320px;">
-=======
+
 	 <footer> 
 	
 	 <div style="background-color:#0f088c; width: 100%; height: 425px;">
->>>>>>> Stashed changes
+
 	 
 	 	<div class="row">	 		
 	 		<div class="column3">
@@ -37,7 +34,8 @@
 		 		</div>
 	 	</div>
 	 </div>	
-	 <h2>Follow us on Social Media </h2>
+	 
+	 <h4>Follow us on Social Media </h4>
 	 <div class="list3"> 
 		   
 		 	<div class="row1">			 	
@@ -59,16 +57,24 @@
 				</div>
 			</div>
 		 
+		</div>
+		
 	</div>
-<<<<<<< Updated upstream
-	</div>
-=======
+
 	
-		<div class="footer-copyright">� 2020 Copyright:
+		<div class="footer-copyright">© 2020 Copyright:
+    		<a href="https://Mataleprivatehospitals5@gmail.com/"> Mataleprivatehospitals.com</a>
+ 		 </div>
+
+
+	</div>
+
+	
+		<div class="footer-copyright">© 2020 Copyright:
     		<a href="https://Mataleprivatehospitals5@gmail.com/"> Mataleprivatehospitals.com</a>
  		 </div>
 	
->>>>>>> Stashed changes
+
 </footer>
 
 </body>

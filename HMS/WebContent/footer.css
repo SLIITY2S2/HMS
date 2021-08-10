@@ -58,9 +58,10 @@ footer{
 
 .column {
   
-  padding:0;
-  margin:5px 20px 0px;
-  float : right;
+ 	margin:15px;
+	padding:0;
+	overflow:hidden;
+	left: 80% ;
 }
 
 .row2{
@@ -71,8 +72,17 @@ footer{
 
 .list3{
 	position:absolute;
-	float:right;		
 }
-h2{
+h4{
 	color: white;
+	text-align: left;
+	margin-left: 20px;
+	font-size: 20px;
+}
+
+.footer-copyright{
+	background-color: #2a2a6f;
+	height: 50px;
+	color: white;
+	text-align: center;
 }
