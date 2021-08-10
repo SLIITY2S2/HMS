@@ -4,8 +4,9 @@
 	 <br><br>
 	 </div>
 
-	 <footer> 
-	 <div style="background-color:#0f088c; width: 100%; height: 320px;">
+	 <footer class="page-footer font-small blue pt-4"> 
+	 <div class="container-fluid text-center text-md-left">
+	 <div style="background-color:#0f088c; width: 100%; height: 425px;">
 	 
 	 	<div class="row">	 		
 	 		<div class="column3">
@@ -35,7 +36,8 @@
 		 		</div>
 	 	</div>
 	 </div>	
-	 <h2>Follow us on Social Media </h2>
+	 
+	 <h4>Follow us on Social Media </h4>
 	 <div class="list3"> 
 		   
 		 	<div class="row1">			 	
@@ -57,7 +59,13 @@
 				</div>
 			</div>
 		 
+		</div>
+		
 	</div>
+	
+		<div class="footer-copyright">© 2020 Copyright:
+    		<a href="https://Mataleprivatehospitals5@gmail.com/"> Mataleprivatehospitals.com</a>
+ 		 </div>
 	</div>
 </footer>
 

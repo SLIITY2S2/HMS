@@ -10,3 +10,18 @@
 	justify-content: center; 
 	align-items: center;
 }
+
+.menu{
+	margin: 15px 25px;
+	padding: 95px;
+	overflow: hidden;
+	
+	
+}
+
+.btnimage{
+	width: 120px;
+	height: 70px;
+	margin-right: 26px;
+}
+
