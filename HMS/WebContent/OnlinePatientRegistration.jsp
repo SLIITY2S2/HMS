@@ -46,7 +46,11 @@
 	     <div class="form-group row">
 	      <label for="address" class="col-sm-2 col-form-label"><b>Address</b></label>
 	      <div class="col-sm-7">
+
 	       <textarea class="form-control" name="address" rows="10"  cols="50" placeholder="Enter Address" required="required"></textarea>
+
+	       <textarea class="form-control" name="address" rows="3"  cols="50" placeholder="Enter Address" required="required"></textarea>
+
 	      </div>
 	     </div>
 	     
@@ -115,5 +119,9 @@
 	  </div>
 	 </div>
 	 <br><br><br> 
+
    </div>
+
+ 
+
     <jsp:include page="Footer.jsp" />
