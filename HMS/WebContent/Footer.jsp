@@ -1,7 +1,7 @@
 
 	 
-	 
 	 <br><br>
+	 </div>
 	 <footer> 
 	 <div style="background-color:#0f088c; width: 100%; height: 320px;">
 	 
@@ -58,5 +58,6 @@
 	</div>
 	</div>
 </footer>
-	 
 
+</body>
+</html>
