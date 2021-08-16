@@ -28,10 +28,9 @@
 				<a href="Login.jsp"><img alt="login" src="./images/login1.jpg" class="btnimage"></a>
 				<a href="OnlinePatientRegistration.jsp"><img alt="login" src="./images/register.jpg" class="btnimage"></a>
 			</div>
+			
 	 	</div>
 	 </div>
-	 
-	 
 	 <div class="background">
 
 		 <br><br><br><br>

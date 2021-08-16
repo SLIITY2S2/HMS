@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+
+.card-body{
+	  background-image: url("./images/feedback1.jpg");
+	/* Half height */
+	  height: 120%;
+	
+	  /* Center and scale the image nicely */
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  opacity: 55%;
+}
+
+.btn-primary{
+	display: inline-block ;
+}
+
+.img5{
+	float:left;
+	margin-right:0.5em ;
+	width: 200px;
+	height: 100px;
+}
+
+
+h1{
+	text-align: center;
+}
+label{
+	color: black ;
+}
