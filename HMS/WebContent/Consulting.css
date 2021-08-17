@@ -1,0 +1,14 @@
+@charset "ISO-8859-1";
+
+
+.background{
+	background: radial-gradient(ellipse at top, #0E32E8, transparent),
+            radial-gradient(ellipse at bottom,#00ccff, transparent);
+}
+.card-body{
+	background: radial-gradient(ellipse at top, #0E32E8, transparent),
+            radial-gradient(ellipse at bottom, #00ccff, transparent);
+            
+    
+
+} 

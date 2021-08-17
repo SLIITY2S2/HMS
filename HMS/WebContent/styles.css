@@ -20,8 +20,17 @@
 }
 
 .btnimage{
-	width: 120px;
-	height: 70px;
-	margin-right: 26px;
+	width: 100px;
+	height: 80px;
+	float: left;
+	margin-right:0.5em;
+
+}
+
+.btn{
+	display:inline-block ;
+	margin-top: 80px;
+	margin-right: 5px;
+	border-radius: 12px;
 }
 
