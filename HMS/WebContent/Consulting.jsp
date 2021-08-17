@@ -12,8 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="header.css" />
 	<link rel="stylesheet" type="text/css" href="footer.css" />
 	<link rel="stylesheet" type="text/css" href="Consulting.css" />
-
-
 	
 </head>
 <body>
@@ -33,35 +31,62 @@
   <div class="background"> 
   <br><br><br> 	
 	<div class="container">
-
-	  <a href="#"><img alt="close" src="./images/close.jpg" width="60px" height="60px"></a>
-    	<h1><b>Give your feedback for efficient and effective service</b></h1><br><br>
+	  
 	  <div class="card">
 	   <div class="card-body">
-	   	
+	   		<h1><b><center>Consulting</center></b></h1><br><br>
 	    <form action="<%=request.getContextPath()%>/#" method="post">
-		     <div class="form-group row">
+	
+			
+	     <div class="form-group row">
+	      <label for="ptype" class="col-sm-2 col-form-label"><b>Patient Type</b></label>
+	      <div class="col-sm-7">
+	       	<select required="required" name="ptype">
+	       		<option value="onlinepatient">Online Patient</option>
+	       		<option value="outpatient">OutPatient</option>
+	       	</select>
+	      </div>
+	     </div>
+	     
+	     <div class="form-group row">
 	      <label for="pid" class="col-sm-2 col-form-label"><b>Patient Id</b></label>
 	      <div class="col-sm-7">
 	       <input type="text" class="form-control" name="pid" readonly="readonly">
 	      </div>
 	     </div>
 	
+	     <div class="form-group row">
+	      <label for="name" class="col-sm-2 col-form-label"><b>Patient Name</b></label>
+	      <div class="col-sm-7">
+	       <input type="text" class="form-control" name="name" required="required">
+	      </div>
+	     </div>
+	
+	     <div class="form-group row">
+	      <label for="spec" class="col-sm-2 col-form-label"><b>Specialization</b></label>
+	      <div class="col-sm-7">
+	          <input type="search" id="site-search" class="form-control" aria-label="Search" placeholder="Enter specialization" name="spec" required="required">
+  			  
+	      </div>
+	     </div>
 	     
 	     <div class="form-group row">
-	      <label for="suggestion" class="col-sm-2 col-form-label"><b>Suggestions</b></label>
+	      <label for="doctor" class="col-sm-2 col-form-label"><b>Doctor</b></label>
 	      <div class="col-sm-7">
-	       <textarea class="form-control" name="suggestion" rows="5"  cols="50"></textarea>
+	       	<select required="required" name="doctor">
+	       		<option></option>	       		
+	       	</select>
 	      </div>
 	     </div>
-		
+	
 	     <div class="form-group row">
-	      <label for="complaints" class="col-sm-2 col-form-label"><b>Complaints</b></label>
+	      <label for="date" class="col-sm-2 col-form-label"><b>Date</b></label>
 	      <div class="col-sm-7">
-	       <textarea class="form-control" name="complaints" rows="5"  cols="50"></textarea>
+	       <input type="date" class="form-control" name="date" required="required">
 	      </div>
 	     </div>
-	    	<button type="submit" class="btn-primary"><img alt="submit" src="./images/submit.jpg" width="70px;" height="35px;"></button>
+	    	     
+	     <button type="submit" class="btn-primary"><img alt="submit" src="./images/submit.jpg" width="70px;" height="35px;"></button>
 	    </form>
 	   </div>
 	  </div>
