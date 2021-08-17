@@ -69,12 +69,6 @@
 
 	</div>
 
-	
-		<div class="footer-copyright">© 2020 Copyright:
-    		<a href="https://Mataleprivatehospitals5@gmail.com/"> Mataleprivatehospitals.com</a>
- 		 </div>
-	
-
 </footer>
 
 </body>
