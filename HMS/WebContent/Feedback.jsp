@@ -12,6 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="header.css" />
 	<link rel="stylesheet" type="text/css" href="footer.css" />
 	<link rel="stylesheet" type="text/css" href="Consulting.css" />
+
+
 	
 </head>
 <body>
@@ -31,35 +33,35 @@
   <div class="background"> 
   <br><br><br> 	
 	<div class="container">
+
 	  <a href="#"><img alt="close" src="./images/close.jpg" width="60px" height="60px"></a>
+    	<h1><b>Give your feedback for efficient and effective service</b></h1><br><br>
 	  <div class="card">
 	   <div class="card-body">
-	   		<h1><b>Give your feedback for efficient and effective service</b></h1><br><br>
+	   	
 	    <form action="<%=request.getContextPath()%>/#" method="post">
-	
-		
-	     <div class="form-group row">
+		     <div class="form-group row">
 	      <label for="pid" class="col-sm-2 col-form-label"><b>Patient Id</b></label>
 	      <div class="col-sm-7">
 	       <input type="text" class="form-control" name="pid" readonly="readonly">
 	      </div>
 	     </div>
 	
+	     
 	     <div class="form-group row">
 	      <label for="suggestion" class="col-sm-2 col-form-label"><b>Suggestions</b></label>
 	      <div class="col-sm-7">
-	       <textarea rows="5" cols="50" name="suggestion"></textarea>
+	       <textarea class="form-control" name="suggestion" rows="5"  cols="50"></textarea>
 	      </div>
 	     </div>
 		
-		  <div class="form-group row">
-		      <label for="complaints" class="col-sm-2 col-form-label"><b>Complaints</b></label>
-		      <div class="col-sm-7">
-		       <textarea rows="5" cols="50" name="complaints"></textarea>
-		      </div>
+	     <div class="form-group row">
+	      <label for="complaints" class="col-sm-2 col-form-label"><b>Complaints</b></label>
+	      <div class="col-sm-7">
+	       <textarea class="form-control" name="complaints" rows="5"  cols="50"></textarea>
+	      </div>
 	     </div>
-	    	     
-	     <button type="submit" class="btn-primary"><img alt="submit" src="./images/submit.jpg" width="70px;" height="35px;"></button>
+	    	<button type="submit" class="btn-primary"><img alt="submit" src="./images/submit.jpg" width="70px;" height="35px;"></button>
 	    </form>
 	   </div>
 	  </div>

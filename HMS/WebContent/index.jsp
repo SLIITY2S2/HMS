@@ -39,10 +39,9 @@
 				</a>
 					
 			</div>
+			
 	 	</div>
 	 </div>
-	 
-	 
 	 <div class="background">
 
 		 <br><br><br><br>
