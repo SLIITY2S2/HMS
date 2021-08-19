@@ -1,0 +1,80 @@
+@charset "ISO-8859-1";
+
+.container {
+      display: grid;
+      grid-template-columns: 1fr 4fr 1fr; /*Here you set how many columns will be and how much of the space they will take, for example there are 3 values, meaning 3 columns, the first and the last one will take 1 space of the row, and the second one will take 4 spaces*/
+      align-items: center;
+      grid-gap: 1em; /*The gap between items*/
+    }
+    
+.container .item:nth-child(2) {
+       text-align: center;
+       
+}
+.container .item:nth-child(1){
+	margin-left: 80%;
+}
+
+.btnimage{
+	width: 100px;
+	height: 80px;
+	float: left;
+	margin-right:0.5em;
+	
+
+}
+
+.btn{
+	display:inline-block ;
+	margin-top: 80px;
+	
+}
+.image{
+	margin-left: 20%;
+	width: 100px;
+	height: 80px;
+	float: left;
+	margin-right:0.5em;
+	margin-top: 80px;
+	
+}
+
+h2{
+	text-align: right;
+}
+
+.background{
+	background-color: #2EBFF6;
+}
+
+.image1{
+	width: 200px;
+	height: 200px;
+}
+
+.image2{
+	width: 200px;
+	height: 200px;
+}
+
+.container-fluid{
+		/* The image used */
+  background-image: url("./images/doctor.jpg");
+
+  /* Half height */
+  height: 120%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.link{
+	
+	color: red;
+	
+}
+	 
+
