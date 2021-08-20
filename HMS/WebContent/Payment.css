@@ -1,24 +1,14 @@
 @charset "ISO-8859-1";
 
-.main_image{
-	 width: 80% ; 
-	 height: 500px
+
+
+.background{
+	background-color: #80ccff;
 }
 
-.image{
-	display: flex; 
-	justify-content: center; 
-	align-items: center;
+.row1{
+	float: right;
 }
-
-.menu{
-	margin: 15px 25px;
-	padding: 95px;
-	overflow: hidden;
-	
-	
-}
-
 .btnimage{
 	width: 100px;
 	height: 80px;
@@ -32,4 +22,8 @@
 	margin-top: 80px;
 	margin-right: 5px;
 	border-radius: 12px;
+}
+
+.card-body{
+	background-color: #80ccff;
 }
