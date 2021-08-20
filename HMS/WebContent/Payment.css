@@ -1,5 +1,6 @@
 @charset "ISO-8859-1";
 
+<<<<<<< Updated upstream
 
 
 .background{
@@ -26,4 +27,8 @@
 
 .card-body{
 	background-color: #80ccff;
+=======
+.background, .card-body{
+	background-color: #2EBFF6;
+>>>>>>> Stashed changes
 }

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -5,6 +6,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="b" uri="http://java.sun.com/jstl/core_rt" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
+=======
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+>>>>>>> Stashed changes
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
 <html>
@@ -17,6 +23,12 @@
 	<link rel="stylesheet" type="text/css" href="footer.css" />
 	<link rel="stylesheet" type="text/css" href="Payment.css" />
 	
+<<<<<<< Updated upstream
+=======
+	<script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="js/app-ajax.js" type="text/javascript"></script>
+	
+>>>>>>> Stashed changes
 </head>
 <body>
 	 <div style="background-image: url('./images/header.jpg');  width: 100%; height: 215px;">
@@ -38,7 +50,11 @@
 	  
 	  <div class="card">
 	   <div class="card-body">
+<<<<<<< Updated upstream
 	    <form action="#" method="post">
+=======
+	    <form action="PaymentServlet" method="post" id="myForm">
+>>>>>>> Stashed changes
 	
 	     <div class="form-group row">
 	      <label for="appno" class="col-sm-2 col-form-label"><b>Appointment No</b></label>
@@ -48,9 +64,15 @@
 	     </div>
 	
 	     <div class="form-group row">
+<<<<<<< Updated upstream
 	      <label for="cardno" class="col-sm-2 col-form-label"><b>Card Number</b></label>
 	      <div class="col-sm-7">
 	      <input type="text" class="form-control" name="cardno" required="required">
+=======
+	      <label for="cardno" class="col-sm-2 col-form-label"><b>Card No</b></label>
+	      <div class="col-sm-7">
+	       <input type="text" class="form-control" name="cardno" required="required">
+>>>>>>> Stashed changes
 	      </div>
 	     </div>
 	     
@@ -70,9 +92,14 @@
 	     
 	     <div class="form-group row">
 	      <label for="bank" class="col-sm-2 col-form-label"><b>Bank Name</b></label>
+<<<<<<< Updated upstream
 	      <div class="col-sm-2">
 	       <input type="text" class="form-control" name="bank" required="required">
 	       
+=======
+	      <div class="col-sm-7">
+	       <input type="text" class="form-control" name="bank" required="required">
+>>>>>>> Stashed changes
 	      </div>
 	     </div>
 	     
@@ -84,6 +111,7 @@
 	      </div>
 	     </div>
 	     
+<<<<<<< Updated upstream
 	      <div class="form-group row">
 	      <label for="service" class="col-sm-2 col-form-label"><b>Service Type</b></label>
 	      <div class="col-sm-7">
@@ -122,6 +150,51 @@
 	   </div>
 	  </div>
 	 </div>
+=======
+	     <div class=" form-group row">
+	      <label for="service" class="col-sm-2 col-form-label"><b>Service Type</b></label>
+	      <div class="col-sm-7">
+	      <select name="service" required="required">
+	      	<option value="app">Online Appointment</option>
+	      	<option value="lab">Laboratory service</option> 
+	      	<option value="discharge">Discharge</option>
+	      </select>
+	      </div>
+	     </div>
+	     
+	     
+	     <div class=" form-group row">
+	      <label for="currentdate" class="col-sm-2 col-form-label"><b>Current Date</b></label>
+	      <div class="col-sm-7">
+	       <input type="date" class="form-control" name="currentdate" required="required">
+	      </div>
+	     </div>
+	     
+	    	<p>Save card.</p>
+	    	<p>I acknowledge that my card information is saved in account for</p>
+	     
+	     <div class="form-group row">
+	      <label for="total" class="col-sm-2 col-form-label"><b>Total amount &nbsp; &nbsp;&nbsp;&nbsp;Rs.</b></label>
+	      <div class="col-sm-7">
+	       <input type="text" class="form-control" name="total" readonly="readonly">
+	      </div>
+	     </div>
+	     
+	     <button type="submit" class="btn-primary"><img alt="submit" src="./images/pay.jpg" width="100px;" height="50px;"></button>
+	   	 <button type="reset" class="btn-primary"><img alt="submit" src="./images/reset.jpg" width="100px;" height="50px;" onClick = "fun()"></button>
+	    </form>
+	   </div>
+	  </div>
+	 </div>
+	 
+	  <script>
+	  function fun(){  
+		   document.getElementById("myForm").reset();  
+		 }
+	 </script>
+	 
+	 
+>>>>>>> Stashed changes
 	 <br><br><br> 
 
     <jsp:include page="Footer.jsp" />
