@@ -67,8 +67,11 @@
  		 </div>
 
 
+<<<<<<< Updated upstream
 	</div>
 
+=======
+>>>>>>> Stashed changes
 </footer>
 
 </body>

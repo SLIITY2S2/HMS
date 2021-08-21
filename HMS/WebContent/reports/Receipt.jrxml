@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="738eac60-1ce0-42db-b0fe-72498ab332b4">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="JasperDB"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT payID, cardNo, holdername, bankname,cardtype,amount
+FROM payment
+WHERE servicetype="app";]]>
+	</queryString>
+	<field name="payID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="payID"/>
+		<property name="com.jaspersoft.studio.field.label" value="payID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cardNo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="cardNo"/>
+		<property name="com.jaspersoft.studio.field.label" value="cardNo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="holdername" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="holdername"/>
+		<property name="com.jaspersoft.studio.field.label" value="holdername"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bankname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="bankname"/>
+		<property name="com.jaspersoft.studio.field.label" value="bankname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cardtype" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="cardtype"/>
+		<property name="com.jaspersoft.studio.field.label" value="cardtype"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="amount" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="amount"/>
+		<property name="com.jaspersoft.studio.field.label" value="amount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="88" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="10" width="75" height="58" uuid="bc913167-ef46-49a5-9ec9-39f8ccad2be8"/>
+				<imageExpression><![CDATA["/WebContent/images/logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="82" y="21" width="462" height="29" uuid="8cc3f93c-55fa-4e3c-8fcc-ac9d664c3134"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Matale Private Hospital Ltd.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="40" width="478" height="20" uuid="fb7fb67b-32d4-4a05-8447-d630e317c441"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Inspiring better health for you and your loving ones.....]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="8" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="-10" y="10" width="60" height="19" uuid="1d787fb8-791a-4d82-92d3-9b0367e1e4fe"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ReferenceNo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="10" width="100" height="19" uuid="7f9cfa0f-9f00-44ca-b1c7-9c8f82a4ac58"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CardNo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="10" width="80" height="19" uuid="e293c8b2-ebee-4449-919a-e593a482ad4a"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Holder]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="11" width="86" height="17" uuid="679147c4-bc9f-4c2a-98de-c8de9e208820"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bank]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="399" y="14" width="62" height="14" uuid="11824b23-d69d-4f5d-9dcc-27bb602c03b8"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="13" width="50" height="17" uuid="309f0fb4-1e14-45d4-8864-9e786816d38e"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="70" splitType="Stretch">
+			<textField>
+				<reportElement x="-9" y="0" width="59" height="15" uuid="61fe99a7-bcc8-436b-8306-90272b32b287"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{payID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="72" y="1" width="98" height="14" uuid="aa176439-b3ab-4104-b0c3-fad1842f9302"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{cardNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="1" width="78" height="16" uuid="f0741f56-7696-4496-8a8b-1e2d682d9994"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{holdername}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="-1" width="87" height="20" uuid="bd884a0c-9e41-4194-9427-c3a3c8005de8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{bankname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="399" y="1" width="63" height="19" uuid="5e534acf-453a-45d3-b536-a1442b3c6e18"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{cardtype}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="0" width="50" height="22" uuid="05f8eef4-d2bc-47c3-a70f-fa48725b557d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="38" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="37" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

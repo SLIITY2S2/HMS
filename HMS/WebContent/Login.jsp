@@ -37,7 +37,7 @@
 	  <div class="jumbotron">
 	  	
 	        <h2>Login</h2>
-	        <form action="#">
+	        <form action="LoginServlet" method="post">
 	          <div class="form-group">
 	          <label for="username" >Username</label>
 	            <input type="text" class="form-control" name="username" placeholder="Enter Username">
