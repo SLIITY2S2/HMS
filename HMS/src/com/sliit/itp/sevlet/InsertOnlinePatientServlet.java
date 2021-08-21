@@ -10,18 +10,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-
-
+import com.sliit.itp.service.IPatient;
+import com.sliit.itp.service.OnlinePatient;
 import com.sliit.itp.service.PatientService;
 
-import com.sliit.itp.service.InPatientService;
-
-
 /**
- * Servlet implementation class InsertPhysicalPatient
+ * Servlet implementation class InsertOnlinePatient
  */
-@WebServlet("/InsertPhysicalPatientServlet")
-public class InsertPhysicalPatientServlet extends HttpServlet {
+@WebServlet("/InsertOnlinePatientServlet")
+public class InsertOnlinePatientServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -31,7 +28,7 @@ public class InsertPhysicalPatientServlet extends HttpServlet {
 		
 		HttpSession session = request.getSession();
 		
-		String id = session.getId();
+		
 		String name = request.getParameter("name");
 		String address = request.getParameter("address");
 		String email = request.getParameter("email");
@@ -39,27 +36,17 @@ public class InsertPhysicalPatientServlet extends HttpServlet {
 		String gender = request.getParameter("gender");
 		String NIC = request.getParameter("NIC");
 		String dob = request.getParameter("dob");
-		String ptype = request.getParameter("ptype");
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		String hobby = request.getParameter("hobby");
 		
-
+		OnlinePatient op = new OnlinePatient();
 		
-		boolean isTrue = false;
+		int id = op.insertPatient(name,address,email,contact,gender,NIC,dob);
 		
-		if(ptype == "Inpatient") {
-			InPatientService inpatient = new InPatientService();
-			isTrue = inpatient.insertPatient(name, address, email, contact,gender,NIC, dob, id);
-
-			
-				if(isTrue == true) {
-					RequestDispatcher dis = request.getRequestDispatcher("ReceptionistHome.jsp");
-					dis.forward(request, response);
-				}
-				else {
-					RequestDispatcher dis = request.getRequestDispatcher("PhysicalPatientRegistration.jsp");
-					dis.forward(request, response);
-				
-				}
-
+		op.insertOnline(id, username, password, hobby);
+		
+		response.sendRedirect("Login.jsp");
 	}
 
 }
