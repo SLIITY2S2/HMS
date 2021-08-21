@@ -34,7 +34,7 @@
 	  <h1><b>Patient Register Form:</b></h1><br><br>
 	  <div class="card">
 	   <div class="card-body">
-	    <form action="<%=request.getContextPath()%>/register" method="post">
+	    <form action="InsertOnlinePatientServlet" method="post">
 	
 	     <div class="form-group row">
 	      <label for="name" class="col-sm-2 col-form-label"><b>Name</b></label>
@@ -64,12 +64,6 @@
 	      </div>
 	     </div>
 	     
-	      <div class="form-group row">
-	      <label for="dob" class="col-sm-2 col-form-label"><b>Date of Birth</b></label>
-	      <div class="col-sm-7">
-	       <input type="date" class="form-control" name="dob" placeholder="Enter Date of Birth" required="required">
-	      </div>
-	     </div>
 	     
 	      <div class="form-group row">
 	      <label for="gender" class="col-sm-2 col-form-label"><b>Gender</b></label>
@@ -79,12 +73,22 @@
 	      </div>
 	     </div>
 	     
+	     
 	     <div class=" form-group row">
 	      <label for="NIC" class="col-sm-2 col-form-label"><b>NIC</b></label>
 	      <div class="col-sm-7">
 	       <input type="text" class="form-control" name="NIC" placeholder="Enter NIC" required="required">
 	      </div>
 	     </div>
+	     
+	      <div class="form-group row">
+	      <label for="dob" class="col-sm-2 col-form-label"><b>Date of Birth</b></label>
+	      <div class="col-sm-7">
+	       <input type="date" class="form-control" name="dob" placeholder="Enter Date of Birth" required="required">
+	      </div>
+	     </div>
+	     
+	     
 	     
 	     
 	     <div class=" form-group row">
