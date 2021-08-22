@@ -5,7 +5,7 @@ import java.util.List;
 import com.sliit.itp.model.Patient;
 
 public interface IPatient {
-	
+
 	public List<Patient> getPatient(String username, String password);
 	
 	public boolean validate(String username, String password);

@@ -1,8 +1,8 @@
 package com.sliit.itp.service;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+
+import java.sql.*;
+
 
 import com.sliit.itp.util.DBConnect;
 
@@ -12,6 +12,7 @@ public class LoginDao {
 	private static Connection con = null;
 	private static Statement stmt = null;
 	private static ResultSet rs = null;
+
 	
 	
 		public static String validatePatient(String username, String password) {
@@ -40,6 +41,20 @@ public class LoginDao {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+			finally {
+			
+			try {
+				
+				if (preparedStatement != null) {
+					preparedStatement.close();
+				}
+				if (con != null) {
+					con.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 			return role;
 			
 		
@@ -100,9 +115,24 @@ public class LoginDao {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+			finally {
+			
+			try {
+				
+				if (preparedStatement != null) {
+					preparedStatement.close();
+				}
+				if (con != null) {
+					con.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 			return role;
 			
 		
 		}
+
 	
 }

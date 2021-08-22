@@ -5,7 +5,7 @@
 <%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="b" uri="http://java.sun.com/jstl/core_rt" %>
-
+<%@ taglib prefix="s" uri="/struts-tags" %>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -22,9 +22,11 @@
 	<link rel="stylesheet" type="text/css" href="header.css" />
 	<link rel="stylesheet" type="text/css" href="footer.css" />
 	<link rel="stylesheet" type="text/css" href="Payment.css" />
+	
 
 	<script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="js/app-ajax.js" type="text/javascript"></script>
+	
+	
 
 </head>
 <body>
@@ -48,8 +50,6 @@
 	  <div class="card">
 	   <div class="card-body">
 
-	   
-
 	    <form action="PaymentServlet" method="post" id="myForm">
 
 	
@@ -61,10 +61,6 @@
 	     </div>
 	
 	     <div class="form-group row">
-
-	      <label for="cardno" class="col-sm-2 col-form-label"><b>Card Number</b></label>
-	      <div class="col-sm-7">
-	      <input type="text" class="form-control" name="cardno" required="required">
 
 	      <label for="cardno" class="col-sm-2 col-form-label"><b>Card No</b></label>
 	      <div class="col-sm-7">
@@ -89,14 +85,8 @@
 	     
 	     <div class="form-group row">
 	      <label for="bank" class="col-sm-2 col-form-label"><b>Bank Name</b></label>
-
-	      <div class="col-sm-2">
-	       <input type="text" class="form-control" name="bank" required="required">
-	       
-
 	      <div class="col-sm-7">
 	       <input type="text" class="form-control" name="bank" required="required">
-
 	      </div>
 	     </div>
 	     
@@ -107,6 +97,7 @@
 	       <input type="radio" class="form-control" name="type"><b>Debit</b>
 	      </div>
 	     </div>
+	     
 
 	      <div class="form-group row">
 	      <label for="service" class="col-sm-2 col-form-label"><b>Service Type</b></label>
@@ -122,7 +113,7 @@
 	     <div class="form-group row">
 	      <label for="cdate" class="col-sm-2 col-form-label"><b>Current Date</b></label>
 	      <div class="col-sm-7">
-	     	<input type="date" class="form-control" name="cdate" value="<%=new Date(session.getCreationTime()) %>" required="required">
+	     	<input type="date" class="form-control" name="cdate" required>" required="required">
 	      </div>
 	     </div>
 	     
@@ -188,6 +179,7 @@
 		   document.getElementById("myForm").reset();  
 		 }
 	 </script>
+	 
 	 
 
 	 <br><br><br> 

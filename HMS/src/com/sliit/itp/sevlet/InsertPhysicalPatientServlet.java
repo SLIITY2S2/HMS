@@ -11,7 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 
+
 import com.sliit.itp.service.PatientService;
+
+import com.sliit.itp.service.InPatientService;
+
 
 /**
  * Servlet implementation class InsertPhysicalPatient
@@ -37,12 +41,14 @@ public class InsertPhysicalPatientServlet extends HttpServlet {
 		String dob = request.getParameter("dob");
 		String ptype = request.getParameter("ptype");
 		
+
 		
 		boolean isTrue = false;
 		
 		if(ptype == "Inpatient") {
-			PatientService inpatient = new PatientService();
-			inpatient.insertInPatient(name, address, email, contact,gender,NIC, dob, id);
+			InPatientService inpatient = new InPatientService();
+			isTrue = inpatient.insertPatient(name, address, email, contact,gender,NIC, dob, id);
+
 			
 				if(isTrue == true) {
 					RequestDispatcher dis = request.getRequestDispatcher("ReceptionistHome.jsp");
@@ -53,10 +59,7 @@ public class InsertPhysicalPatientServlet extends HttpServlet {
 					dis.forward(request, response);
 				
 				}
-		if(ptype == "Consulting") {
-			
-		}
-		}
+
 	}
 
 }
