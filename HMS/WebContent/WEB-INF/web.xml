@@ -3,6 +3,17 @@
   <display-name>HMS</display-name>
 
   
+  <servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.sliit.itp.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/*LoginServlet</url-pattern>
+	</servlet-mapping>
+
+
+  
    <servlet>
     <servlet-name>PaymentServlet</servlet-name>
     <servlet-class>com.sliit.itp.sevlet.PaymentServlet</servlet-class>
@@ -20,17 +31,8 @@
     <servlet-name>InsertPhysicalPatientServlet</servlet-name>
     <url-pattern>/*InsertPhysicalPatientServlet</url-pattern>
   </servlet-mapping>
-  
-    
-   <servlet>
-    <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>com.sliit.itp.sevlet.LoginServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>LoginServlet</servlet-name>
-    <url-pattern>/*LoginServlet</url-pattern>
-  </servlet-mapping>
-  
+
+
   
   
   
