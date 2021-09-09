@@ -3,8 +3,6 @@
 <%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="b" uri="http://java.sun.com/jstl/core_rt" %>
-<%@ taglib prefix="s" uri="/struts-tags" %>
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -121,49 +119,6 @@
 	      <label for="total" class="col-sm-2 col-form-label"><b>Total Amount Rs.</b></label>
 	      <div class="col-sm-2">
 	       <input type="text" class="form-control" name="total" readonly="readonly">
-	       
-	      </div>
-	     </div>
-	  	<div class="row1">
-				
-					<button type="submit" class="btn">
-						<img alt="pay" src="./images/pay.jpg" class="btnimage">
-					</button>
-			
-			</div>	  
-	  </form>
-	   </div>
-	  </div>
-	 </div>
-
-	     <div class=" form-group row">
-	      <label for="service" class="col-sm-2 col-form-label"><b>Service Type</b></label>
-	      <div class="col-sm-7">
-	      <select name="service" required="required">
-	      	<option value="app">Online Appointment</option>
-	      	<option value="lab">Laboratory service</option> 
-	      	<option value="discharge">Discharge</option>
-	      </select>
-	      </div>
-	     </div>
-	     
-	     
-	     <div class=" form-group row">
-	      <label for="currentdate" class="col-sm-2 col-form-label"><b>Current Date</b></label>
-	      <div class="col-sm-7">
-	       <input type="date" class="form-control" name="currentdate" required="required">
-	      </div>
-	     </div>
-	     
-	    	<p>Save card.</p>
-	    	<p>I acknowledge that my card information is saved in account for</p>
-	     
-	     <div class="form-group row">
-	      <label for="total" class="col-sm-2 col-form-label"><b>Total amount &nbsp; &nbsp;&nbsp;&nbsp;Rs.</b></label>
-	      <div class="col-sm-7">
-	       <input type="text" class="form-control" name="total" readonly="readonly">
-	      </div>
-	     </div>
 	     
 	     <button type="submit" class="btn-primary"><img alt="submit" src="./images/pay.jpg" width="100px;" height="50px;"></button>
 	   	 <button type="reset" class="btn-primary"><img alt="submit" src="./images/reset.jpg" width="100px;" height="50px;" onClick = "fun()"></button>
