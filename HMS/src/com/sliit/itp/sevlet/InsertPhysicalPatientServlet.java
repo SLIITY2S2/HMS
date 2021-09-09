@@ -59,7 +59,7 @@ public class InsertPhysicalPatientServlet extends HttpServlet {
 					dis.forward(request, response);
 				
 				}
-
+		}
 	}
 
 }
